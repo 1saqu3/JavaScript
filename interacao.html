@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interação JS</title>
+<style>
+    body{
+        text-align: center;
+        background-color: rgba(19, 150, 69, 0.568);
+        color: black;
+    }
+    div{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    button{
+        border: none;
+
+     }
+     img{
+        width: 300px;
+     }
+</style>
+</head>
+<body>
+   
+    <div>
+        <h1>Interagindo com um botão </h1>
+        <h3>Clique no ET </h3>
+        <button onclick="clicou()"> <img src="giphy.gif" alt=""> </button>
+    </div>
+
+    <script>
+        function clicou(){
+            window.alert('Você clicou no ET ')
+        }
+    </script>
+    
+</body>
+</html>
