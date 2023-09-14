@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        body{
+            background-color: rgb(243, 243, 203);
+            color:black ;
+            text-align: center;
+        }
+        button{
+            padding: 20px;
+            border: 2px;
+
+        }
+        section{
+            background-color: rgba(44, 129, 179, 0.288);
+            position: absolute;
+            top: 50% ;
+            left:50%;
+            transform: translate(-50%,-50%);
+            border: 2px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Java Script </h1>
+    <button onclick="inicio()">Clicou</button>
+
+    <section id="resultado">
+        <p>
+            O resultado irá aparecer aqui.
+        </p>
+    </section>
+
+    <script>
+        function inicio(){
+          let curso = window.prompt('Qual é o nome do seu curso')
+          let res = window.document.getElementById ('resultado')
+          res.innerHTML = `<p>Que legal! Gostei de 
+        saber que você cursa ${curso}!. `
+        }
+    </script>
+    
+    
+</body>
+</html>
